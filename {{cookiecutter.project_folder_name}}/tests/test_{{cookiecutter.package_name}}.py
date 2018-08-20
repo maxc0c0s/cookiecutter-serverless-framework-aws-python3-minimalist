@@ -11,6 +11,6 @@ class TestsHandlers(unittest.TestCase):
 
         self.assertEqual(response.get('statusCode'), 200)
         body = json.loads(response.get('body'))
-        self.assertEqual(body.message, 'Go Serverless v1.0! Your function executed successfully! ')
-        self.assertEqual(body.input, 'event')
+        self.assertEqual(body.get('message'), 'Go Serverless v1.0! Your function executed successfully! ')
+        self.assertEqual(body.get('input'), 'event')
 
