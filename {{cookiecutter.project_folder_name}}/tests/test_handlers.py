@@ -1,10 +1,10 @@
 import json
 import unittest
 
-from {{cookiecutter.package_name}}.handler import hello
+from handlers import hello
 
 
-class TestsHandlers(unittest.TestCase):
+class TestsHello(unittest.TestCase):
 
     def test_hello(self):
         response = hello('event', 'context')

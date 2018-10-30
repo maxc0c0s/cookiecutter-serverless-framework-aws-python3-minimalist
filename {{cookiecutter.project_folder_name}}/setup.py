@@ -9,7 +9,7 @@ test_requirements = convert_deps_to_pip(pfile['dev-packages'], r=False)
 print(requirements)
 
 setup(
-    name="{{cookiecutter.package_name}}",
+    name="{{cookiecutter.project_folder_name}}",
     version="{{cookiecutter.package_version}}",
     packages=find_packages(exclude=['tests']),
     install_requires=requirements,

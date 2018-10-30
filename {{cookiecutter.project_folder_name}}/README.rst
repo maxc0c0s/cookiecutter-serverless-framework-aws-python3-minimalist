@@ -1,3 +1,3 @@
 =============================
-{{cookiecutter.package_name}}
+{{cookiecutter.project_folder_name}}
 =============================
